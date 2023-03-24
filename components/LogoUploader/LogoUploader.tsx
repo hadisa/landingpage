@@ -1,7 +1,6 @@
 import { useAppProvider } from "@appProvider/AppProvider";
 import axios from "axios";
 import React, { useRef, useState } from "react";
-import LogoOptionsUi from "../CustomPopover/LogoOptionsUi";
 
 const LogoUploader = () => {
   const {
@@ -111,22 +110,10 @@ const LogoUploader = () => {
         height: "fit-content",
         position: "relative",
       }}
-      // onMouseEnter={(e) => {
-      //   setStyleLogo({ display: "block" });
-      // }}
-      // onMouseLeave={(e) => {
-      //   setStyleLogo({ display: "none" });
-      // }}
     >
-      {/* {isReadOnly ? null : <LogoOptionsUi style={styleLogo} />} */}
-
       {!image ? (
         <div
           style={{
-            // minWidth: `${minWidthLogo}px`,
-            // maxWidth: `${maxWidthLogo}px`,
-            // minHeight: ` ${minHeightLogo}px`,
-            // maxHeight: `${maxHeightLogo}px`,
             overflow: "hidden",
           }}
         >

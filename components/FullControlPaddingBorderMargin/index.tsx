@@ -1,2 +1,0 @@
-import FullControlPaddingBorderMargin from "./FullControlPaddingBorderMargin"
-export default FullControlPaddingBorderMargin

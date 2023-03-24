@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 @import "./styles.css";
-@import "./paperbits.css";
 
   #horizontalSwiper .swiper {
     width: 100%;

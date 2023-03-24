@@ -1,84 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
-import { useAppProvider } from "@appProvider/AppProvider";
-import { useModalsAppProvider } from "@appProvider/ModalsAppProvider";
-import { useState } from "react";
 import GlobeCardList from "./GlobeCardList";
 import GlobeComponent from "./GlobeComponent";
 
 const GlobalEdgeNetwork = () => {
-  const {
-    fontSizeDataTitle,
-    fontDataTitle,
-    colorDataTitle,
-    // backgroundColorDataTitle,
-    //  border
-    borderBottomColorDataTitle,
-    borderBottomWidthDataTitle,
-    borderTopColorDataTitle,
-    borderTopWidthDataTitle,
-    borderLeftColorDataTitle,
-    borderLeftWidthDataTitle,
-    borderRightColorDataTitle,
-    borderRightWidthDataTitle,
-    // border style
-    borderRightStyleDataTitle,
-    borderLeftStyleDataTitle,
-    borderTopStyleDataTitle,
-    borderBottomStyleDataTitle,
-    // border radius
-    borderTopRightRadiusDataTitle,
-    borderTopLeftRadiusDataTitle,
-    borderBottomRightRadiusDataTitle,
-    borderBottomLeftRadiusDataTitle,
-    // padding
-    paddingTopDataTitle,
-    paddingBottomDataTitle,
-    paddingLeftDataTitle,
-    paddingRightDataTitle,
-    // margin
-    marginTopDataTitle,
-    marginBottomDataTitle,
-    marginLeftDataTitle,
-    marginRightDataTitle,
-
-    // -------------------------
-
-    borderBottomColorData,
-    borderBottomWidthData,
-    borderTopColorData,
-    borderTopWidthData,
-    borderLeftColorData,
-    borderLeftWidthData,
-    borderRightColorData,
-    borderRightWidthData,
-    // border style
-    borderRightStyleData,
-    borderLeftStyleData,
-    borderTopStyleData,
-    borderBottomStyleData,
-    // border radius
-    borderTopRightRadiusData,
-    borderTopLeftRadiusData,
-    borderBottomRightRadiusData,
-    borderBottomLeftRadiusData,
-    // padding
-    paddingTopData,
-    paddingBottomData,
-    paddingLeftData,
-    paddingRightData,
-    // margin
-    marginTopData,
-    marginBottomData,
-    marginLeftData,
-    marginRightData,
-    fontSizeData,
-    colorData,
-    fontData,
-  }: any = useModalsAppProvider();
-  const [contentStyle, setContentStyle] = useState({ display: "none" });
-  const [titleStyle, setTitleStyle] = useState({ display: "none" });
-  const { isReadOnly }: any = useAppProvider();
-
   return (
     <div style={{ backgroundColor: "#000" }}>
       <div

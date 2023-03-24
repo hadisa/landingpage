@@ -1,15 +1,13 @@
 import { Dialog } from "@headlessui/react";
 import { useState } from "react";
 
-import HeaderOptionsUi from "@/CustomPopover/HeaderOptionsUi";
 import Bars from "@/icons/Bars";
 import Globe from "@/icons/Globe";
+import XMark from "@/icons/XMark";
 import Logo from "@/Logo";
 import { useAppProvider } from "@appProvider/AppProvider";
 import { useAppStateProvider } from "@appProvider/AppStateProvider";
 import { NAVIGATION } from "../constant";
-import LanguageModal from "../modals/LanguageModal";
-import XMark from "@/icons/XMark";
 
 const navigation = NAVIGATION;
 
@@ -257,7 +255,6 @@ const Header = ({ bgHeader, colorMenu }: any) => {
           </div>
         </Dialog.Panel>
       </Dialog>
-      <LanguageModal open={openLan} close={closeLanModals} />
     </header>
   );
 };

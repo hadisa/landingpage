@@ -3,13 +3,11 @@ export const ICON_URL = "/svg/";
 export const SHIELDRING = { lat: 90, lng: 0 };
 
 export const SLIDER_IMAGES = [
-  { id: 1, img: "/images/slider/1.png", width: "500px" },
-  { id: 2, img: "/images/slider/2.png", width: "800px" },
+  { id: 1, img: "/images/slider/2.png", width: "800px" },
+  { id: 2, img: "/images/slider/1.png", width: "500px" },
   { id: 3, img: "/images/slider/3.png", width: "500px" },
   { id: 4, img: "/images/slider/4.png", width: "500px" },
-  { id: 5, img: "/images/slider/5.png", width: "500px" },
-  { id: 6, img: "/images/slider/6.png", width: "500px" },
-  { id: 7, img: "/images/slider/7.png", width: "500px" },
+  { id: 5, img: "/images/slider/7.png", width: "500px" },
 ];
 export const VOLCANOES = [
   {
@@ -46,7 +44,6 @@ export const NOTE_GLOBE_SECTION = [
   {
     description:
       "Our Zero Trust approach ensures that every user and device is verified and authenticated before being granted access to our infrastructure. We also use strict access controls, network segmentation, and continuous monitoring to quickly detect and address any potential security threats.",
-    // image: "/img/icon/svg/postgresql.svg",
   },
   {
     description: `HarshCorp's Vault Secrets Management provides secure storage and management of sensitive data such as passwords and API keys. We keep our security protocols up-to-date and reliable to protect your data at all times.`,
@@ -82,7 +79,7 @@ export const NOTE_CLOUD_SECTION = [
     title: "Define, Deploy, and Dominate",
     description:
       "With our platform, you can define your entire infrastructure in your Git repository, making deployment a breeze. Just declare your desired components, and we'll handle the rest",
-    image: "/img/icon/svg/postgresql.svg",
+    image: "/img/svg/postgresql.svg",
   },
   {
     id: 3,

@@ -24,15 +24,8 @@ export default class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          {/* Step 5: Output the styles in the head  */}
-
-          {/* <link rel="stylesheet" href="https://unpkg.com/swiper@9.1.1/swiper-bundle.min.css" /> */}
-          {/* <link rel="stylesheet" href="https://unpkg.com/swiper@5.4.5/css/swiper.css" />
-          <link rel="stylesheet" href="https://unpkg.com/swiper@5.4.5/css/swiper.min.css" /> */}
-
           <script src="https://unpkg.com/react-id-swiper@3.0.0/lib/react-id-swiper.js"></script>
           <script src="https://unpkg.com/react-id-swiper@3.0.0/lib/react-id-swiper.min.js"></script>
-
           {(this.props as any).styleTags}
         </Head>
         <body>

@@ -2,12 +2,10 @@ import { createContext, useContext, useEffect, useState } from "react";
 import {
   BUTTONS_PLUGIN_ID,
   DATA_PLUGIN,
-  HEADER_PLUGIN_ID,
   VERIFY_CODE,
   VERIFY_TITLE_PLUGIN_ID,
 } from "../components/Constant/const";
 import { FILE_PATH_HEADER, FILE_PATH_MODALS, TEMPLATE_PATH } from "../config";
-import { DEFAULT_COLOR_SITE } from "../theme/ConstantColors";
 import { getPluginValue } from "../utils/uiController";
 import { useAppProvider } from "./AppProvider";
 
@@ -119,8 +117,7 @@ export const ModalsAppProvider = ({ children }: any) => {
   // -----------------------------------------------------------------------TitleModal --------------------------------------- 5
 
   const [fontSizeTitleModal, setFontSizeTitleModal] = useState("0.78rem");
-  const [backgroundColorTitleModal, setBackgroundColorTitleModal] =
-    useState(DEFAULT_COLOR_SITE);
+  const [backgroundColorTitleModal, setBackgroundColorTitleModal] = useState();
   const [colorTitleModal, setColorTitleModal] = useState("#000");
   const [fontTitleModal, setFontTitleModal] = useState("Roboto");
   const [dialogOpenTitleModal, setDialogOpenTitleModal] = useState(false);

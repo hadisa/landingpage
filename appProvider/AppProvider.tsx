@@ -1,7 +1,6 @@
 import { HEADER_PLUGIN_ID, LOGO_PLUGIN_ID } from "@/Constant/const";
 import { createContext, useContext, useEffect, useState } from "react";
 import { getPluginValue } from "utils/uiController";
-import { DEFAULT_COLOR_SITE } from "../theme/ConstantColors";
 
 const Context = createContext({});
 
@@ -136,8 +135,7 @@ export const AppProvider = ({ children }: any) => {
   // -------------------------------------------------------Modal box
   //---------------------------------------------------------------- ModalBox
   const [fontSizeModalBox, setFontSizeModalBox] = useState("1rem");
-  const [backgroundColorModalBox, setBackgroundColorModalBox] =
-    useState(DEFAULT_COLOR_SITE);
+  const [backgroundColorModalBox, setBackgroundColorModalBox] = useState();
   const [colorModalBox, setColorModalBox] = useState("#fff");
   const [fontModalBox, setFontModalBox] = useState("Roboto");
   const [dialogOpenModalBox, setDialogOpenModalBox] = useState(false);

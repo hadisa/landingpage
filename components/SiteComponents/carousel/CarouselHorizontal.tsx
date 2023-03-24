@@ -1,28 +1,20 @@
-import { Swiper, SwiperSlide } from "swiper/react";
+import { useAppStateProvider } from "@appProvider/AppStateProvider";
+import { Mousewheel, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
+import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
-import "swiper/swiper.min.css";
-import "swiper/swiper.css";
 import "swiper/swiper-element-bundle.min.css";
-import { Mousewheel, Pagination } from "swiper";
-import { useEffect, useRef, useState } from "react";
+import "swiper/swiper.css";
+import "swiper/swiper.min.css";
 import { useWindowSize } from "../utils/utility";
 import CarouselCard from "./CarouselCard";
-import { useAppStateProvider } from "@appProvider/AppStateProvider";
 
 const CarouselHorizontal = ({ images, scrollFun }: any) => {
   const size = useWindowSize();
   const { isEndSlide, setIsEndSlide }: any = useAppStateProvider();
-  // const myRef = useRef(undefined);
-  // useEffect(() => {
-  //   if (!isEndSlide) {
-  //     myRef.current.scrollIntoView();
-  //   }
-  // }, [isEndSlide]);
   return (
     <div
-      // ref={myRef}
       id="horizontalSwiper"
       style={{
         marginTop: "150px",
@@ -64,8 +56,8 @@ const CarouselHorizontal = ({ images, scrollFun }: any) => {
             spaceBetween: 20,
           },
           1024: {
-            slidesPerView: 4,
-            spaceBetween: 5,
+            slidesPerView: 3,
+            spaceBetween: 50,
           },
         }}
         style={{
@@ -98,6 +90,9 @@ const CarouselHorizontal = ({ images, scrollFun }: any) => {
             </SwiperSlide>
           );
         })}
+        <SwiperSlide key={12}>
+          <div></div>
+        </SwiperSlide>
       </Swiper>
     </div>
   );
